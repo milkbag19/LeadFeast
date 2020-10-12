@@ -2,10 +2,10 @@
 include_once('../config.php');
 require('../twitter-api-php-master/twitter-api-php-master/TwitterAPIExchange.php');
 
-define('DB_SERVER_NAME', "ftp.digiterahost.com");
-define('DB_USERNAME', "leadfeas_bruh");
-define('DB_PASSWORD', "JHTygzziLso3");
-define('DB_NAME', "leadfeas_dude");
+define('DB_SERVER_NAME', "");
+define('DB_USERNAME', "");
+define('DB_PASSWORD', "");
+define('DB_NAME', "");
 $conn = mysqli_connect(DB_SERVER_NAME, DB_USERNAME, DB_PASSWORD, DB_NAME) or die(mysqli_connect_error());
 $stmts = $conn->prepare("SELECT * FROM users");
 $stmts->execute();
